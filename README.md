@@ -12,6 +12,16 @@ python3 -m http.server 5200
 
 Then open http://localhost:5200.
 
+## Deploy
+
+Live: https://ksic-website-version3.bankey-lal.workers.dev
+
+Hosted on Cloudflare Workers static assets (`wrangler.jsonc`). `.assetsignore` keeps git files, the design mockup, README and config out of the upload.
+
+```bash
+npx wrangler deploy
+```
+
 ## Structure
 
 ```
